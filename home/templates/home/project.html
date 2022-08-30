@@ -1,0 +1,60 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'home/css/project.css' %}">
+{% endblock %}
+
+{% block tittle %} PORTFOLIO|About_us{% endblock %}
+{% block content %}
+
+
+<div class="main-project-div pt-2 pb-5 " style="background-color: rgb(205, 205, 205);" >
+
+    <div class="container ">
+        <div class="row pt-2">
+            <div class="col-lg-4 col-md-4 col-12 project-div mt-2">
+                <div class="card img img-fluid project-card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid"   src="{% static  'home/images/project1.png' %}" alt="Card image cap">
+                    <div class="card-body"> 
+                        <h5 class="card-title">Collegekart</h5>
+                        <p class="card-text">This is a web application built using Django
+                            framework.Which
+                            helps the students to provide products related to their college and Foods
+                        </p>
+                        <a href="https://clgkart.com" target="blank" class="btn btn-primary">Visit This site </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12  project-div mt-2">
+                <div class="card img img-fluid project-card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid"  src="{% static  'home/images/Netflixclone.jpg' %}" alt="Card image cap">
+                    <div class="card-body"> 
+                        <h5 class="card-title">Netflix Clone</h5>
+                        <p class="card-text">Netflix clone is a web application which is a replica of the Netflix app along with its business model, features, 
+                            revenue system, security, user interface, etc.</p>
+                        <a href="https://netflix-clone-e0e30.firebaseapp.com/"  target="blank"  class="btn btn-primary">Visit This site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 project-div mt-2">
+                <div class="card img img-fluid project-card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid"  src="{% static  'home/images/Huffman.png' %}" alt="Card image cap">
+                    <div class="card-body"> 
+                        <h5 class="card-title">Huff-man</h5>
+                        <p class="card-text">
+                            Huffman application is a lossless data compression algorithm. In this algorithm,
+                            a variable-length code is assigned to input different characters.</p>
+                        <a href="/static/home/images/project3.jpg"  target="blank"  class="btn btn-primary">view in new tab</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
